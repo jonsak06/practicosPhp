@@ -1,0 +1,40 @@
+HTML - Práctico 03 - Listas Ordenadas Enlazadas
+
+MACROMEDIA FLASH 4 Tabla de Contenido
+Conceptos básicos de Flash
+Información general básica sobre Flash
+Acerca de las imágenes de vectores y mapas de bits 
+Introducción al entorno de trabajo de Flash 
+ Escenario y ventana de línea de tiempo 
+ Ventana de biblioteca 
+ Símbolos e instancias 
+ Símbolos y películas interactivas
+Creación de una película y configuración de sus propiedades
+Previsualización y prueba de películas 
+ Control de la reproducción de películas 
+ Prueba de películas
+Uso de la paleta de herramientas
+Uso de la línea de tiempo 
+ Desplazamiento del cabezal de lectura
+ Visualización del estado de los fotogramas
+ Cambio de visualización de fotogramas en la línea de tiempo
+ Creación de rótulos de fotogramas y comentarios de películas
+Uso de escenas
+Uso de la ventana de biblioteca
+ Trabajo con carpetas en la ventana de biblioteca
+ Clasificación de elementos en la ventana de biblioteca
+ Cambio de nombre de elementos de biblioteca 
+ Supresión de elementos de biblioteca 
+ Localización de elementos de biblioteca no utilizados
+ Actualización de archivos importados
+ Uso del menú Bibliotecas 
+Uso de inspectores
+Uso de menús contextuales
+Visualización del escenario
+ Aumento y reducción de la visualización 
+ Movimiento de la visualización
+ Uso de comandos de Ver
+Uso de cuadrícula y reglas
+Impresión de archivos Flash
+Aumento de velocidad de visualización
+Configuración de preferencias

@@ -1,0 +1,15 @@
+Estructurando una Página Web
+
+Inicio - Fotos - Contacto
+
+Formas de organizar nuestra página WEBEn la especificación HTML5, HTML está a cargo de la estructura del documento y provee un grupo completo de nuevos elementos para este propósito. La especificación también incluye algunos elementos con la única tarea de proveer estilos.
+            
+Esta es la imagen del primer mensaje
+   
+comentarios (0)
+
+Mensaje número uno
+Mensaje número dos
+
+Derechos Reservados &copy; Taller Desarrollo Aplicaciones Web
+

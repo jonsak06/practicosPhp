@@ -1,0 +1,12 @@
+HTML - Práctico 01 - Encabezados y Párrafos
+
+Novedades de Flash 4
+Flash 4 ofrece nuevas funciones para la creación de sitios Web interactivos interesantes y atractivos. Entre las nuevas funciones de reproducción se incluyen: flujos de sonido MP3, campos de texto para que el usuario pueda incluir texto editable en una película y mejoras en las acciones de Flash que permiten crear juegos, formularios y cuestionarios. Entre las nuevas funciones de creación se incluyen: un proceso de publicación fluido, una ventana de biblioteca con diseño nuevo, varios inspectores nuevos y una interfaz gráfica mejorada.
+Flujos de sonido MP3
+Exporte flujos y eventos sonoros con la compresión MP3 para crear pistas sonoras precisas de películas y mantener los archivos lo suficientemente pequeños como para su distribución eficiente en un ancho de banda reducido. Consulte Exportación de películas con sonido en la página 209.
+Campos de texto editables
+Coloque campos de texto en una película para que la audiencia pueda editar el texto mientras se reproduce la película. Utilice campos de texto para crear campos donde introducir contraseñas, formularios de registro, cuestionarios y otros formatos de recopilación de datos de los usuarios. Consulte Configuración de atributos de tipo en la página 114.
+Acciones complejas adicionales
+La incorporación de acciones complejas que evalúan eventos e información mientras se reproduce la película y que cambian en función del resultado, permite crear elementos de la interfaz muy funcionales como por ejemplo controles deslizantes, botones de radio y menús de las aplicaciones. Utilice las acciones nuevas para duplicar buena parte de la funcionalidad de JavaScript y otros lenguajes de scripts para crear películas compatibles en distintos navegadores y plataformas, y que los usuarios tengan la misma experiencia independientemente de la configuración. Consulte Acerca de la creación de películas interactivas en la página 165.
+Ventana de biblioteca mejorada
+El nuevo diseño de la ventana de biblioteca facilita la gestión de cientos de componentes en proyectos grandes. Cree carpetas para organizar y guardar dichos componentes. Además del nombre de cada símbolo, ahora las columnas de la ventana de biblioteca muestran el tipo de símbolo, el número de veces que aparece el elemento en la película y la fecha de la última modificación. Clasifique los elementos de la biblioteca por cualquiera de sus columnas. Consulte Uso de la ventana de biblioteca en la página 60.
