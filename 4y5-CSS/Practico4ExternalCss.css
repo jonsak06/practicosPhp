@@ -1,0 +1,38 @@
+h1,
+p,
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 12px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    font-style: italic;
+    text-align: right;
+}
+
+.blue {
+    color: #0000ff;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+.big-text {
+    font-size: 24px;
+}
