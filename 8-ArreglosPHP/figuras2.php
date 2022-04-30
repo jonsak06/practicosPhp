@@ -28,7 +28,7 @@
             $nombreFigura = array_keys($figuras[$index])[0];
             $archivoFigura = $figuras[$index][$nombreFigura];
             echo $nombreFigura."<br>";
-            echo "<img src='imagenes/".$archivoFigura."' alt='".$index."'>";
+            echo "<img src='imagenes/".$archivoFigura."' alt='".$nombreFigura."'>";
         }
     ?>
     

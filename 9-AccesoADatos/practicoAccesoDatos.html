@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-color: darkseagreen;
+        }
+        h1 {
+            color: darkblue;
+        }
+        hr {
+            width: 300px;
+        }
+    </style>
+    <title>Práctico acceso a datos - Home</title>
+</head>
+<body>
+    <h1>CRUD de estudiantes</h1>
+    <form action="practicoAccesoDatos.php" method="POST">
+        <input name="crearCedula" type="text" placeholder="Cédula" required>
+        <br>
+        <input name="crearNombre" type="text" placeholder="Nombre" required>
+        <br>
+        <input name="crearApellido" type="text" placeholder="Apellido" required>
+        <br>
+        <input name="crearEdad" type="number" placeholder="Edad" required>
+        <br>
+        <input type="submit" value="Crear estudiante">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <form action="practicoAccesoDatos.php" method="POST">
+        <input name="borrarCedula" type="text" placeholder="Cédula" required>
+        <br>
+        <input type="submit" value="Borrar estudiante">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <form action="practicoAccesoDatos.php" method="POST">
+        <input name="modCedula" type="text" placeholder="Cédula" required>
+        <br>
+        <input name="modEdad" type="number" placeholder="Edad" required>
+        <br>
+        <input type="submit" value="Modificar estudiante">
+    </form>
+    <br>
+    <hr>
+    <br>
+    
+    <form action="practicoAccesoDatos.php" method="POST">
+        <input name="muestraCedula" type="text" placeholder="Cédula" required>
+        <br>
+        <input type="submit" value="Mostrar estudiante">
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <form action="practicoAccesoDatos.php" method="POST">
+        <input type="submit" value="Listar estudiantes">
+    </form>
+    
+</body>
+</html>
