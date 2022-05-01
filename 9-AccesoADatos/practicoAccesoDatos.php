@@ -10,11 +10,28 @@
 
     function mostrarEstudiante($rows)
     {
-        echo "Datos del estudiante:<br><br>";
         echo "Cédula: ".$rows[0]."<br>";
         echo "Nombre: ".$rows[1]."<br>";
         echo "Apellido: ".$rows[2]."<br>";
         echo "Edad: ".$rows[3]."<br>";
+    }
+
+    function array_orderby()
+    {
+        $args = func_get_args();
+        $data = array_shift($args);
+        foreach ($args as $n => $field) {
+            if (is_string($field)) 
+            {
+                $tmp = array();
+                foreach ($data as $key => $row)
+                    $tmp[$key] = $row[$field];
+                $args[$n] = $tmp;
+            }
+        }
+        $args[] = &$data;
+        call_user_func_array('array_multisort', $args);
+        return array_pop($args);
     }
 
     //Creación de estudiante
@@ -72,6 +89,7 @@
             mysqli_query($conexion,$sql);
             $estudiante = mysqli_query($conexion,$sql2);
             echo "Estudiante actualizado.<br><br>";
+            echo "Datos del estudiante:<br><br>";
             mostrarEstudiante(mysqli_fetch_array($estudiante));
             echo "<br><a href='practicoAccesoDatos.html'>Volver</a>";
         }
@@ -91,7 +109,9 @@
             $sql = "SELECT * FROM estudiante WHERE estudiante.ci = '$cedula'";
             $estudiante = mysqli_query($conexion,$sql);
             
+            echo "Datos del estudiante:<br><br>";
             mostrarEstudiante(mysqli_fetch_array($estudiante));
+            echo "<br><a href='practicoAccesoDatos.html'>Volver</a>";
         }
         else 
         {
@@ -102,6 +122,50 @@
     }
 
     //Listado de estudiantes
-    
+    if(isset($_POST["listado"]))
+    {
+        $sql = "SELECT * FROM estudiante";
+        $resultado = mysqli_query($conexion, $sql);
+        echo "Lista de estudiantes:<br><br>";
+        $cantidadEstudiantes = 0;
+        $estudiantes = array();
+
+        while($rows = mysqli_fetch_array($resultado))
+        {
+            $estudiantes[$cantidadEstudiantes] = array(
+                "Cedula" => $rows[0],
+                "Nombre" => $rows[1],
+                "Apellido" => $rows[2],
+                "Edad" => $rows[3]
+            );
+            $cantidadEstudiantes++;
+        }
+
+        $colApellido = array_column($estudiantes, "Apellido");
+        $colNombre = array_column($estudiantes, "Nombre");
+        $estudiantes = array_orderby($estudiantes, 'Apellido', SORT_ASC, 'Nombre', SORT_ASC);
+
+        echo "<table>";
+        echo "<tr style='font-weight:bold;'>";
+        echo "<td>Cédula</td>";
+        echo "<td>Nombre</td>";
+        echo "<td>Apellido</td>";
+        echo "<td>Edad</td>";
+        echo "</tr>";
+        foreach($estudiantes as $estudiante)
+        {
+            echo "<tr>";
+            foreach($estudiante as $v)
+            {
+                echo "<td>$v</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+        
+        echo "<br>Cantidad de estudiantes: ".$cantidadEstudiantes."<br>";
+        echo "<br><a href='practicoAccesoDatos.html'>Volver</a>";
+    }
+
 
 ?>
