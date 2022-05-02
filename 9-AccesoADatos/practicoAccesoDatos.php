@@ -100,6 +100,39 @@
         }
     }
 
+    //Modificación de estudiante 2
+    if(isset($_POST["modCedula2"]))
+    {
+        $cedula = $_POST["modCedula2"];
+        if(existeEstudiante($conexion, $cedula))
+        {
+            $sql = "SELECT * FROM estudiante WHERE estudiante.ci = '$cedula'";
+            $estudiante = mysqli_query($conexion,$sql);
+            echo "Datos del estudiante:<br><br>";
+            mostrarEstudiante(mysqli_fetch_array($estudiante));
+            echo "<form action='practicoAccesoDatos.php' method='POST'>";
+            echo "<input type='hidden' name='modCedula3' value='$cedula'>";
+            echo "<br><input type='number' name='modEdad2' placeholder='Edad' min=0 required>";
+            echo "<br><input type='submit' value='Modificar'><br>"; 
+            echo "</form>";
+            echo "<a href='practicoAccesoDatos.html'>Volver</a>";
+        }
+        else
+        {
+            echo "Estudiante no existe.<br>";
+            echo "<br><a href='practicoAccesoDatos.html'>Volver</a>";
+        }
+    }
+    if(isset($_POST["modEdad2"]))
+    {
+        $cedula = $_POST["modCedula3"];
+        $edad = $_POST["modEdad2"];
+        $sql = "UPDATE estudiante SET edad = $edad WHERE estudiante.ci = '$cedula'";
+        mysqli_query($conexion,$sql);
+        echo "Estudiante actualizado.<br>";
+        echo "<br><a href='practicoAccesoDatos.html'>Volver</a>";
+    }
+
     //Mostrar un estudiante
     if(isset($_POST["muestraCedula"]))
     {
